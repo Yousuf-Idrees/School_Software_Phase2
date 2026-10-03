@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="sqlite-jdbc-master">
+    <archive path="C:/Users/omars/Desktop/Soft/sqlite-jdbc-master.zip" />
+  </library>
+  <library name="Maven: org.xerial:sqlite-jdbc:3.41.2.1">
+    <archive path="C:/Users/omars/.m2/repository/org/xerial/sqlite-jdbc/3.41.2.1/sqlite-jdbc-3.41.2.1.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.1">
+  <diagram name="Page-1" id="HqgAZIoBw3tSnf20uvhH">
+    <mxGraphModel dx="1819" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="&lt;&lt;interface&gt;&gt;&#xa;Notification" vertex="1">
+          <mxGeometry height="126" width="279" x="278" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-2" parent="d0OS_C-6PR-DAIlDdYAw-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="279" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-3" parent="d0OS_C-6PR-DAIlDdYAw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+send(message: String) : void" vertex="1">
+          <mxGeometry height="47" width="279" y="79" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=47.2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="DashboardAnnouncement" vertex="1">
+          <mxGeometry height="102.2" width="330" x="20" y="477" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-5" parent="d0OS_C-6PR-DAIlDdYAw-4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="330" y="47.2" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-6" parent="d0OS_C-6PR-DAIlDdYAw-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+send(message: String) : void" vertex="1">
+          <mxGeometry height="47" width="330" y="55.2" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=61.33333333333333;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="&lt;&lt;abstract&gt;&gt;&#xa;NotificationDecorator" vertex="1">
+          <mxGeometry height="192.33333333333331" width="459" x="400" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-8" parent="d0OS_C-6PR-DAIlDdYAw-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="#tempNotification: Notification" vertex="1">
+          <mxGeometry height="41" width="459" y="61.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-9" parent="d0OS_C-6PR-DAIlDdYAw-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="459" y="102.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-10" parent="d0OS_C-6PR-DAIlDdYAw-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+NotificationDecorator(notification: Notification)" vertex="1">
+          <mxGeometry height="41" width="459" y="110.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-11" parent="d0OS_C-6PR-DAIlDdYAw-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+send(message: String) : void" vertex="1">
+          <mxGeometry height="41" width="459" y="151.33333333333331" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-12" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36.888888888888886;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="EmailDecorator" vertex="1">
+          <mxGeometry height="155.88888888888889" width="391" x="219" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-13" parent="d0OS_C-6PR-DAIlDdYAw-12" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="391" y="36.888888888888886" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-14" parent="d0OS_C-6PR-DAIlDdYAw-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+EmailDecorator(notification: Notification)" vertex="1">
+          <mxGeometry height="37" width="391" y="44.888888888888886" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-15" parent="d0OS_C-6PR-DAIlDdYAw-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+send(message: String) : void" vertex="1">
+          <mxGeometry height="37" width="391" y="81.88888888888889" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-16" parent="d0OS_C-6PR-DAIlDdYAw-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-sendEmail(message: String) : void" vertex="1">
+          <mxGeometry height="37" width="391" y="118.88888888888889" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-17" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36.888888888888886;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="SMSDecorator" vertex="1">
+          <mxGeometry height="155.88888888888889" width="371" x="660" y="686" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-18" parent="d0OS_C-6PR-DAIlDdYAw-17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="371" y="36.888888888888886" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-19" parent="d0OS_C-6PR-DAIlDdYAw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+SMSDecorator(notification: Notification)" vertex="1">
+          <mxGeometry height="37" width="371" y="44.888888888888886" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-20" parent="d0OS_C-6PR-DAIlDdYAw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+send(message: String) : void" vertex="1">
+          <mxGeometry height="37" width="371" y="81.88888888888889" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-21" parent="d0OS_C-6PR-DAIlDdYAw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-sendSMS(message: String) : void" vertex="1">
+          <mxGeometry height="37" width="371" y="118.88888888888889" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-22" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=47.2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" value="CommunicationModule" vertex="1">
+          <mxGeometry height="102.2" width="303" x="266" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-23" parent="d0OS_C-6PR-DAIlDdYAw-22" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="303" y="47.2" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-24" parent="d0OS_C-6PR-DAIlDdYAw-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+main(args: String[]) : void" vertex="1">
+          <mxGeometry height="47" width="303" y="55.2" as="geometry" />
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-25" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-1" style="curved=1;dashed=1;startArrow=block;startSize=16;startFill=0;endArrow=none;exitX=0;exitY=0.95;entryX=0.5;entryY=0;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-26" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-1" style="curved=1;dashed=1;startArrow=block;startSize=16;startFill=0;endArrow=none;exitX=0.5;exitY=1;entryX=0.17;entryY=0;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="418" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-27" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-7" style="curved=1;startArrow=diamondThin;startSize=14;startFill=0;endArrow=none;exitX=0.55;exitY=0;entryX=1;entryY=0.93;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-1" value="aggregates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="659" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-28" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-7" style="curved=1;startArrow=block;startSize=16;startFill=0;endArrow=none;exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-29" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-7" style="curved=1;startArrow=block;startSize=16;startFill=0;endArrow=none;exitX=0.87;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="846" y="661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d0OS_C-6PR-DAIlDdYAw-30" edge="1" parent="1" source="d0OS_C-6PR-DAIlDdYAw-22" style="curved=1;dashed=1;startArrow=none;endArrow=open;endSize=12;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="d0OS_C-6PR-DAIlDdYAw-1" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

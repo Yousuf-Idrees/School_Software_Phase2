@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.6">
+  <diagram name="Page-1" id="Cevrk6i4979ASfdrW24O">
+    <mxGraphModel dx="1958" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;&lt;interface&gt;&gt;&#xa;GradeExporter" vertex="1">
+          <mxGeometry height="126" width="502" x="35" y="286" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-2" parent="Qaxe9K8fFqGlcNr8h74S-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="502" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-3" parent="Qaxe9K8fFqGlcNr8h74S-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+exportGrades(studentId: String, reportData: String) : void" vertex="1">
+          <mxGeometry height="47" width="502" y="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=47.2;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="LegacyReportPrinter" vertex="1">
+          <mxGeometry height="102.2" width="333" x="119" y="728" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-5" parent="Qaxe9K8fFqGlcNr8h74S-4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="333" y="47.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-6" parent="Qaxe9K8fFqGlcNr8h74S-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+printReport(data: String) : void" vertex="1">
+          <mxGeometry height="47" width="333" y="55.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="GradeExporterAdapter" vertex="1">
+          <mxGeometry height="168" width="531" x="20" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-8" parent="Qaxe9K8fFqGlcNr8h74S-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-adaptee: LegacyReportPrinter" vertex="1">
+          <mxGeometry height="40" width="531" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-9" parent="Qaxe9K8fFqGlcNr8h74S-7" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="531" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-10" parent="Qaxe9K8fFqGlcNr8h74S-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+GradeExporterAdapter(adaptee: LegacyReportPrinter)" vertex="1">
+          <mxGeometry height="40" width="531" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-11" parent="Qaxe9K8fFqGlcNr8h74S-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+exportGrades(studentId: String, reportData: String) : void" vertex="1">
+          <mxGeometry height="40" width="531" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-12" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36.8;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="ReportService" vertex="1">
+          <mxGeometry height="192.8" width="469" x="51" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-13" parent="Qaxe9K8fFqGlcNr8h74S-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-exporter: GradeExporter" vertex="1">
+          <mxGeometry height="37" width="469" y="36.8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-14" parent="Qaxe9K8fFqGlcNr8h74S-12" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="469" y="73.8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-15" parent="Qaxe9K8fFqGlcNr8h74S-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+ReportService(exporter: GradeExporter)" vertex="1">
+          <mxGeometry height="37" width="469" y="81.8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-16" parent="Qaxe9K8fFqGlcNr8h74S-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+generateReport(studentId: String, data: String) : void" vertex="1">
+          <mxGeometry height="37" width="469" y="118.8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-17" parent="Qaxe9K8fFqGlcNr8h74S-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+main(args: String[]) : void " vertex="1">
+          <mxGeometry height="37" width="469" y="155.8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-18" edge="1" parent="1" source="Qaxe9K8fFqGlcNr8h74S-1" style="curved=1;dashed=1;startArrow=block;startSize=16;startFill=0;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qaxe9K8fFqGlcNr8h74S-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-19" edge="1" parent="1" source="Qaxe9K8fFqGlcNr8h74S-7" style="curved=1;startArrow=diamondThin;startSize=14;startFill=0;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qaxe9K8fFqGlcNr8h74S-4" value="adapts">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qaxe9K8fFqGlcNr8h74S-20" edge="1" parent="1" source="Qaxe9K8fFqGlcNr8h74S-12" style="curved=1;startArrow=diamondThin;startSize=14;startFill=0;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="Qaxe9K8fFqGlcNr8h74S-1" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
